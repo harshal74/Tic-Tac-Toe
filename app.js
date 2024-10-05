@@ -17,7 +17,8 @@ const win = [
 let i = 0;
 
 btns.forEach((btns) => {
-    if (turnO) {
+    btns.addEventListener("click", () => {
+        if (turnO) {
             btns.innerText = "O";
             btns.style.backgroundColor ="#ecbac3";
             turnO = false;
