@@ -17,12 +17,13 @@ const win = [
 let i = 0;
 
 btns.forEach((btns) => {
-    btns.addEventListener("click", () => {
-        if (turnO) {
+    if (turnO) {
             btns.innerText = "O";
+            btns.style.backgroundColor ="#ecbac3";
             turnO = false;
         } else {
             btns.innerText = "X";
+            btns.style.backgroundColor ="#fdfffe";
             turnO = true;
         }
         btns.disabled = true;
